@@ -2,9 +2,9 @@
 [![Build Status](https://travis-ci.org/HP41/ansible-coreos-docker-compose.svg?branch=master)](https://travis-ci.org/HP41/ansible-coreos-docker-compose)
 
 
-## This role installs Docker Compose for CoreOS
-* Downloads Docker Compose to `/opt/bin` which is a standard location to place binaries as it's writable and in `PATH`.
-* Currently downloads Docker Compose v1.14 using URL: `https://github.com/docker/compose/releases/download/1.14.0/docker-compose-Linux-x86_64`.
+## This role installs docker-compose for CoreOS
+* Downloads docker-compose to `/opt/bin` which is a standard location to place binaries as it's writable and in `PATH`.
+* Currently downloads docker-compose v1.14 using URL: `https://github.com/docker/compose/releases/download/1.14.0/docker-compose-Linux-x86_64`.
 
 ## Requirements 
 * Ansible >= 2.1

@@ -1,11 +1,11 @@
 ---
-- name: Create {{docker_compose_location}} before downlaoding docker compose
+- name: Create {{docker_compose_location}} before downloading docker-compose
   file:
     path: "{{docker_compose_location}}"
     state: directory
     mode: "{{docker_compose_location_mode}}"
 
-- name: Download Docker Compose
+- name: Download docker-compose
   get_url:
     url: "{{docker_compose_download_url}}"
     dest: "{{docker_compose_location}}/{{docker_compose_filename}}"

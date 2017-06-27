@@ -9,7 +9,6 @@ galaxy_info:
 
   galaxy_tags:
     - docker
-    - docker-compose
     - coreos
 
 dependencies: []

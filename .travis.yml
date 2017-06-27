@@ -35,6 +35,11 @@ script:
     grep -q 'failed=0' output.txt
     && (echo 'Role run: pass' && exit 0) 
     || (echo 'Role run: fail' && exit 1)
+
+  - >
+    [[ -x "/opt/bin/docker-compose" ]] 
+    && (echo 'docker-compose exists and executable: pass' && exit 0) 
+    || (echo 'docker-compose exists and executable: fail' && exit 1)
     
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
